@@ -21,7 +21,8 @@ A modern subscription management application built with **React Native** and **E
 ### 1️⃣ Initial Setup & Configuration
 - [x] **Expo & TypeScript**: Initialized a robust foundation using Expo SDK 54 with strict TypeScript typing.
 - [x] **NativeWind Integration**: Performed a manual setup of NativeWind to leverage Tailwind CSS utility classes in a native environment.
-- [x] **Clerk Auth**: Integrated Clerk for seamless authentication and user management.
+- [x] **Tab Navigation**: Added tab navigation for different sections of the app.
+- [x] **Safe Area View**: Added safe area view to prevent UI elements from being overlapped by the status bar and notch.
 
 ### 2️⃣ Advanced Routing (Expo Router)
 - [x] **File-Based Routing**: Implemented a clean directory structure where files automatically become routes.

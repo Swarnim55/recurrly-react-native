@@ -1,15 +1,17 @@
-import { Link, useLocalSearchParams } from 'expo-router'
-import { Text, View } from 'react-native'
+import { useLocalSearchParams } from 'expo-router';
+import { styled } from 'nativewind';
+import { Text } from 'react-native';
+import { SafeAreaView as RNSafeAreaView } from "react-native-safe-area-context";
+
+const SafeAreaView = styled(RNSafeAreaView)
 
 const SubscriptionDetails = () => {
     const { id } = useLocalSearchParams<{ id: string }>()
+
     return (
-        <View>
+        <SafeAreaView className="flex-1 bg-background p-5">
             <Text>SubscriptionDetails - {id}</Text>
-            <Link href="/" className='mt-4 rounded bg-primary px-4 py-2 text-white'>
-                Back to Home
-            </Link>
-        </View>
+        </SafeAreaView>
     )
 }
 

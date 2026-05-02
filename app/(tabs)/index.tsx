@@ -8,27 +8,27 @@ const SafeAreaView = styled(RNSafeAreaView)
 export default function App() {
   return (
     <SafeAreaView className="flex-1 bg-background p-5">
-      <Text className="text-xl font-bold text-success">
-        Welcome to Recurly!
+      <Text className="text-5xl text-primary font-sans-extrabold">
+        Home
       </Text>
-      <Link href="/onboarding" className="mt-4 rounded bg-primary px-4 py-2 text-white">
+      <Link href="/onboarding" className="mt-4 font-sans-bold rounded bg-primary p-4 text-white">
         Get Started
       </Link>
 
-      <Link href="/(auth)/sign-in" className="mt-4 rounded bg-primary px-4 py-2 text-white">
+      <Link href="/(auth)/sign-in" className="mt-4 font-sans-bold rounded bg-primary p-4 text-white">
         Sign In
       </Link>
-      <Link href="/(auth)/sign-up" className="mt-4 rounded bg-primary px-4 py-2 text-white">
+      <Link href="/(auth)/sign-up" className="mt-4 font-sans-bold rounded bg-primary p-4 text-white">
         Sign Up
       </Link>
 
-      <Link href="/subscriptions/spotify" className="mt-4 rounded bg-primary px-4 py-2 text-white">Spotify Subscription</Link>
+      <Link href="/subscriptions/spotify" className="mt-4 font-sans-bold rounded bg-primary p-4 text-white">Spotify Subscription</Link>
       <Link href={{
         pathname: "/subscriptions/[id]",
         params: {
           id: "claude"
         }
-      }} className="mt-4 rounded bg-primary px-4 py-2 text-white">Claude Max Subscription</Link>
+      }} className="mt-4 font-sans-bold rounded bg-primary p-4 text-white">Claude Max Subscription</Link>
     </SafeAreaView>
   );
 }
